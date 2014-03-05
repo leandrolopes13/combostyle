@@ -1,71 +1,112 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Combostyle : Combo style jQuery plugin + Bootstrap" />
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="description" content="Combostyle : Combo style jQuery plugin + Bootstrap" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Combostyle</title>
-  </head>
+  <title>Combostyle</title>
+  <style>
+    .btn-buy-coffee {
+      -moz-box-shadow:inset 0px 1px 0px 0px #a6827e;
+      -webkit-box-shadow:inset 0px 1px 0px 0px #a6827e;
+      box-shadow:inset 0px 1px 0px 0px #a6827e;
+      background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7d5d3b), color-stop(1, #634b30));
+      background:-moz-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
+      background:-webkit-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
+      background:-o-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
+      background:-ms-linear-gradient(top, #7d5d3b 5%, #634b30 100%);
+      background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d5d3b', endColorstr='#634b30',GradientType=0);
+      background-color:#7d5d3b;
+      -moz-border-radius:3px;
+      -webkit-border-radius:3px;
+      border-radius:3px;
+      border:1px solid #54381e;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:arial;
+      font-size:13px;
+      padding:6px 24px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #4d3534;
+    }
+    .btn-buy-coffee:hover,.btn-buy-coffee:focus {
+      background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #634b30), color-stop(1, #7d5d3b));
+      background:-moz-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
+      background:-webkit-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
+      background:-o-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
+      background:-ms-linear-gradient(top, #634b30 5%, #7d5d3b 100%);
+      background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#634b30', endColorstr='#7d5d3b',GradientType=0);
+      background-color:#634b30;
+    }
+    .btn-buy-coffee:active {
+      position:relative;
+      top:1px;
+    }
+  </style>
+</head>
 
-  <body>
+<body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/leandrolopes13/combostyle">View on GitHub</a>
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+    <header class="inner">
+      <a id="forkme_banner" href="https://github.com/leandrolopes13/combostyle">View on GitHub</a>
 
-          <h1 id="project_title">Combostyle</h1>
-          <h2 id="project_tagline">Combo style jQuery plugin + Bootstrap</h2>
+      <h1 id="project_title">Combostyle</h1>
+      <h2 id="project_tagline">Combo style jQuery plugin + Bootstrap</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/leandrolopes13/combostyle/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/leandrolopes13/combostyle/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="donate-1-" class="anchor" href="#donate-1-"><span class="octicon octicon-link"></span></a>Donate $1 :)</h3>
-
-<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=C5UCDC8HT84YY&amp;lc=US&amp;item_number=combostyle&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted" target="_blank">Buy me a coffee</a></p>
-
-<h3>
-<a name="simple-example" class="anchor" href="#simple-example"><span class="octicon octicon-link"></span></a>Simple example:</h3>
-
-<pre>
-   $('select').combostyle({
-      iconPath: 'assets/img/icons/'
-   });
-</pre>
+      <section id="downloads">
+        <a class="zip_download_link" href="https://github.com/leandrolopes13/combostyle/zipball/master">Download this project as a .zip file</a>
+        <a class="tar_download_link" href="https://github.com/leandrolopes13/combostyle/tarball/master">Download this project as a tar.gz file</a>
       </section>
-    </div>
+    </header>
+  </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Combostyle maintained by <a href="https://github.com/leandrolopes13">leandrolopes13</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+  <!-- MAIN CONTENT -->
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+      <h3>
+        <a name="donate-1-" class="anchor" href="#donate-1-"><span class="octicon octicon-link"></span></a>Donate $1 :)</h3>
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-47212411-5");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+        <p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=C5UCDC8HT84YY&amp;lc=US&amp;item_number=combostyle&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted" target="_blank" class="btn-buy-coffee">Buy me a coffee</a></p>
+
+        <h3>
+          <a name="simple-example" class="anchor" href="#simple-example"><span class="octicon octicon-link"></span></a>Simple example:</h3>
+
+          <pre>
+           $('select').combostyle({
+           iconPath: 'assets/img/icons/'
+         });
+       </pre>
+     </section>
+   </div>
+
+   <!-- FOOTER  -->
+   <div id="footer_wrap" class="outer">
+    <footer class="inner">
+      <p class="copyright">Combostyle maintained by <a href="https://github.com/leandrolopes13">leandrolopes13</a></p>
+      <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+    </footer>
+  </div>
+
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-47212411-5");
+      pageTracker._trackPageview();
+    } catch(err) {}
+  </script>
 
 
-  </body>
+</body>
 </html>
