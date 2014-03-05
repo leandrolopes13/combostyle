@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>combostyle - jQuery style combobox Plugin</title>
+  <meta name="description" content="combostyle - jQuery style combobox Plugin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" CONTENT="plugin,jquery,combobox,select,combo,">
+  <meta name="copyright" content="www.agenciakreato.com" />
+  <meta name="author" content="contato@agenciakreato.com" />
+  <meta name="rating" content="geral,general" />
+  <meta name="googlebot" content="index,follow" />
+  <meta name="Publisher" content="Agência Kreato" />
+  <meta name="Publisher-Email" content="contato@agenciakreato.com" />
+  <meta http-equiv="content-language" content="pt-br"> 
+  <meta name="robots" CONTENT="index,follow">
+
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.agenciakreato.com/assets/favicon.ico">
+  <link rel="icon" type="image/png" href="http://www.agenciakreato.com/assets/favicon.png">
+  <link rel="address bar icon" href="http://www.agenciakreato.com/assets/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.agenciakreato.com/assets/favicon.ico">
+
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/github.css">
+  <script src="./assets/js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+ <header>
+   <div class="container">
+   <a href="http://www.agenciakreato.com/"><h1>combostyle</h1></a>
+   </div>
+ </header>
+ <main>
+   <div class="container">
+     <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="col-md-6">
+          <select name="language" title="Language" data-icon-attr="icon-image">
+           <option value="pt_BR" icon-image="pt_BR.png">Português</option>
+           <option value="en" icon-image="en.png">English</option>
+           <option value="es" icon-image="es.png">Espanõl</option>
+         </select>
+         <select name="sex" title="Sex">
+           <option value="m">Male</option>
+           <option value="f">Female</option>
+         </select>            
+         <button type="button" class="btn btn-default btn-sm" onclick="destroyCombo('select[name=language]')">Destroy Language</button><button type="button" class="btn btn-default btn-sm" onclick="destroyCombo('select[name=sex]')">Destroy Sex</button><button type="button" class="btn btn-default btn-sm" onclick="destroyCombo()">Destroy All</button>
+       </div>
+       <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">Support this project. Donate $1. :)</div>
+          <div class="panel-body">
+            <p>
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                ">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
+              </form>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Code</div>
+        <div class="panel-body">
+          <pre>
+            <code>
+    $('select').combostyle({
+      iconPath: 'assets/img/icons/'
+    });
+    </code>
+  </pre>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</main>
+
+<footer>
+</footer>
+<script src="./assets/js/jquery-1.10.2.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/combostyle.jquery.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
