@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1" />
   <meta name="description" content="Combostyle : Combo style jQuery plugin + Bootstrap" />
 
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/normalize.css">  
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/bootstrap.min.css">
 
   <title>Combostyle</title>
   <style>
@@ -80,7 +82,11 @@
 
         <h3>
           <a name="simple-example" class="anchor" href="#simple-example"><span class="octicon octicon-link"></span></a>Simple example:</h3>
-
+          <select name="language" title="Language" data-icon-attr="icon-image">
+            <option value="pt_BR" icon-image="pt_BR.png">Português</option>
+            <option value="en" icon-image="en.png">English</option>
+            <option value="es" icon-image="es.png">Espanõl</option>
+          </select>
 <pre>
 $('select').combostyle({
   iconPath: 'assets/img/icons/'
@@ -97,6 +103,16 @@ $('select').combostyle({
     </footer>
   </div>
 
+  <script type="text/javascript" src="javascripts/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="javascripts/combostyle.jquery.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('select').combostyle({
+      iconPath: 'https://raw.github.com/leandrolopes13/combostyle/master/assets/img/icons/'
+    });
+  });
+  </script>
   <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
